@@ -1,0 +1,609 @@
+@charset "utf-8";
+
+/*fv*/
+.fv {
+    position: relative;
+    max-height: 750px;
+    overflow: hidden;
+}
+
+/* 画像 */
+
+.fv_img {
+    max-height: 100%;
+}
+
+.fv_img img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* オーバーレイ（暗くする） */
+.fv::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* テキスト */
+.fv_content {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-70%);
+    color: #f7f5f2;
+    z-index: 2;
+    text-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* タイトル */
+.fv_title {
+    font-size: 36px;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.fv_btn {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 14px 40px;
+    box-shadow: 0 8px 20px rgba(198,124,78,0.3);
+    transition: 0.3s;
+    border: 2px solid #f7f5f2;
+    border-radius: 20px;
+}
+
+/*fvここまで*/
+
+/*serviceセクション*/
+.service {
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* ラベル */
+.service_label {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+    color: #666;
+}
+
+/* タイトル */
+.service_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #3a2f2a;
+}
+
+/* 説明文 */
+.service_text {
+    font-size: 16px;
+    line-height: 2.2;
+    color: #6b5b52;
+    margin-bottom: 60px;
+}
+
+/* 強調 */
+.service_text span {
+    color: #c67c4e;
+    font-weight: 600;
+}
+
+/* 3カラム */
+.service_list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* カード */
+.service_item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    flex: 1;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+/* アイコン */
+.service_item img {
+    height: 150px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+/* タイトル */
+.service_item h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #3a2f2a;
+}
+
+/* テキスト */
+.service_item p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/*サービスの詳細*/
+.service_detail {
+    max-width: 800px;
+    margin: 100px auto 0;
+}
+
+/* 1行 */
+.service_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 0 auto 80px;
+}
+
+/* 画像 */
+.service_img {
+    flex: 1;
+}
+
+.service_img img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+/* テキスト */
+.service_desc {
+    flex: 1;
+    text-align: left;
+}
+
+.service_desc h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #3a2f2a;
+}
+
+.service_desc p {
+    font-size: 14px;
+    line-height: 2;
+    color: #666;
+}
+
+/* 逆配置 */
+.service_row.reverse {
+    flex-direction: row-reverse;
+    
+}
+
+/*serviceセクションここまで*/
+
+/*flowセクション*/
+.flow {
+    padding: 0 0 120px ;
+    text-align: center;
+}
+
+/* タイトル */
+.flow_sub {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.flow_title {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: #3a2f2a;
+}
+
+.flow_text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 80px;
+}
+
+/* 横並び */
+.flow_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* カード */
+.flow_item {
+    position: relative;
+    width: 220px;
+    padding: 40px 20px 30px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* 番号 */
+.flow_number {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c47a4a;
+    color: #fff;
+    font-size: 24px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+/* 見出し */
+.flow_item h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #3a2f2a;
+}
+
+/* アイコン */
+.flow_item img {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/* テキスト */
+.flow_item p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* 矢印 */
+.flow_arrow {
+    font-size: 30px;
+    color: #999;
+}
+
+/*flowセクションここまで*/
+
+/*CTA*/
+.cta {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #e5e2dd;
+    margin-bottom: 120px;
+}
+
+/* タイトル */
+.cta_title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #3a2f2a;
+    margin-bottom: 30px;
+}
+
+/* 強調（無料） */
+.cta_title span {
+    color: #c67c4e;
+    font-size: 55px;
+}
+
+/* サブテキスト */
+.cta_text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* ボタン */
+.cta_btn {
+    font-size: 20px;
+    padding: 16px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(198,124,78,0.3);
+    font-weight:bold;
+}
+
+/* 注意書き */
+.cta_note {
+    transform: translateY(110px);
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+}
+
+/*CTAここまで*/
+
+/*768pxレスポンシブ対応*/
+@media screen and (max-width: 768px){
+
+	/*fv*/
+	.fv_title {
+  		font-size: 28px;
+		margin-bottom: 30px;
+	}
+
+	.fv_btn {
+    	font-size: 22px;
+    	padding: 12px 32px;
+    	border-radius: 16px;
+  	}
+
+	.fv_content {
+		left: 15px;
+	}
+
+	/*serviceセクション*/
+    .service {
+        padding: 80px 20px;
+    }
+
+    .service_title {
+        font-size: 26px;
+    }
+
+    .service_text {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    /* 縦並びに変更 */
+    .service_list {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* カード */
+    .service_item {
+        max-width: 280px;
+        width: 100%;
+        padding: 24px 20px;
+    }
+
+    /* アイコン */
+    .service_item img {
+        height: 100px;
+        margin-bottom: 16px;
+    }
+
+    /* タイトル */
+    .service_item h3 {
+        font-size: 16px;
+    }
+
+    /* テキスト */
+    .service_item p {
+        font-size: 12px;
+    }
+
+	/* detail */
+    .service_detail {
+        margin-top: 60px;
+        padding: 0 20px;
+    }
+
+    /* 1行を縦並びに */
+    .service_row {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 60px;
+    }
+
+    /* reverseも強制的に同じ並びにする */
+    .service_row.reverse {
+        flex-direction: column;
+    }
+
+    .service_desc {
+        text-align: center;
+    }
+
+    .service_img img {
+        border-radius: 16px;
+    }
+
+    .service_desc h3 {
+        font-size: 20px;
+    }
+
+    .service_desc p {
+        font-size: 12px;
+    }
+	
+	/* flowセクション */
+    .flow {
+        padding: 0 20px 80px;
+    }
+
+	.flow_title {
+        font-size: 26px;
+    }
+
+    .flow_text {
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+    /* 縦並び */
+    .flow_list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flow_item {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* 矢印を下向きに */
+    .flow_arrow {
+        transform: rotate(90deg);
+        font-size: 24px;
+		margin: 0 auto 15px;
+    }
+	
+	/*CTAラスト*/
+    .cta_last {
+        padding: 60px 20px;
+        margin-bottom: 80px;
+    }
+
+    /* タイトル */
+    .cta_last .cta_title {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* 「無料」強調 */
+    .cta_last .cta_title span {
+        font-size: 36px;
+        display: inline-block;
+        margin: 4px 0;
+    }
+
+    /* サブテキスト */
+    .cta_last .cta_text {
+       	font-size: 13px;
+       	line-height: 1.6;
+        margin-bottom: 30px;
+   	}
+
+   	/* ボタン */
+   	.cta_last .cta_btn {
+        display: block;
+       	width: 80%;
+       	max-width: 320px;
+       	margin: 0 auto 20px;
+       	font-size: 24px;
+       	padding: 16px;
+       	border-radius: 12px;
+    }
+
+    /* 注意書き */
+    .cta_last .cta_note {
+        font-size: 11px;
+        line-height: 1.5;
+        transform: translateY(50px);
+    }
+}
+
+/*768pxここまで*/
+
+/*375pxレスポンシブ対応*/
+@media screen and (max-width: 375px){
+
+	.fv_title {
+  		font-size: 22px;
+		margin-bottom: 22px;
+	}
+	.fv_btn {
+    	font-size: 18px;
+    	padding: 10px 24px;
+    	border-radius: 14px;
+  	}
+	
+	/*serviceセクション*/
+    .servoice {
+        padding: 60px 20px;
+    	}
+
+    .service_title {
+        font-size: 24px;
+    }
+
+	.service_text {
+       	font-size: 12px;
+       	margin-bottom: 30px;
+   	}
+
+   	/* カード */
+   	.service_item {
+       	max-width: 260px;
+       	padding: 20px 16px;
+   	}
+
+   	.service_item img {
+       	height: 80px;
+       	margin-bottom: 12px;
+   	}
+
+    .service_item h3 {
+       	font-size: 14px;
+    }
+
+    .service_item p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+	/* detail */
+	.service_img {
+		margin-bottom: 0;
+	}
+	
+	.service_desc h3 {
+        font-size: 18px;
+    }
+
+    .service_desc p {
+        font-size: 12px;
+    }
+
+	/* flowセクション */
+    .flow {
+        padding: 0 20px 60px;
+    }
+
+	.flow_title {
+        font-size: 24px;
+    }
+	
+	.flow_text {
+       	font-size: 11px;
+   	}
+	
+	/*CTAラスト*/
+    .cta_last {
+        padding: 50px 16px;
+        margin-bottom: 60px;
+    }
+
+    /* タイトル */
+    .cta_last .cta_title {
+        font-size: 22px;
+    }
+
+    /* 無料 */
+    .cta_last .cta_title span {
+        font-size: 32px;
+    }
+
+    /* サブ */
+    .cta_last .cta_text {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+
+    /* ボタン */
+    .cta_last .cta_btn {
+        width: 80%;
+       	font-size: 16px;
+        padding: 14px;
+    }
+
+    /* 注意書き */
+    .cta_last .cta_note {
+        font-size: 10px;
+        transform: Y(50px); 
+       	margin-top: 16px;
+    }
+}
+
+/*375pxここまで*/

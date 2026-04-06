@@ -1,0 +1,663 @@
+@charset "utf-8";
+
+/*fv*/
+.fv {
+    position: relative;
+    max-height: 750px;
+    overflow: hidden;
+}
+
+/* 画像 */
+
+.fv_img {
+    max-height: 100%;
+}
+
+.fv_img img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* オーバーレイ（暗くする） */
+.fv::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* テキスト */
+.fv_content {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    color: #f7f5f2;
+    z-index: 1;
+    text-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* CONCEPTラベル */
+.fv_label {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    opacity: 0.8;
+}
+
+/* タイトル */
+.fv_title {
+    font-size: 36px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/*fvここまで*/
+
+/*コンセプトメッセージ*/
+
+.concept_message {
+    padding: 120px 0;
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        #f7f5f2,
+        #e5e2dd
+    );
+}
+
+/* ラベル */
+.concept_label {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+    color: #6b5b52;
+}
+
+/* タイトル */
+.concept_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: #3a2f2a;
+}
+
+/* テキスト全体 */
+.concept_text p {
+    font-size: 16px;
+    line-height: 2.2;
+    margin-bottom: 45px;
+    color: #3a2f2a;
+    letter-spacing: 0.05em;
+}
+
+/* 強調（オレンジ） */
+.concept_text span {
+    color: #c67c4e;
+    font-weight: 500;
+}
+
+/* ブランド */
+.concept_brand {
+    margin-top: 60px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #666;
+}
+
+/* 最後のリード */
+.concept_lead {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #3a2f2a;
+    line-height: 2.7;
+}
+
+/*コンセプトメッセージここまで*/
+
+/*Problemセクション*/
+
+.problem {
+    padding: 120px 0 100px;
+}
+
+/* 横並び */
+.problem_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 左テキスト */
+.problem_content {
+    flex: 1;
+}
+
+/* ラベル */
+.problem_label {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+    color: #666;
+}
+
+/* タイトル */
+.problem_title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #3a2f2a;
+}
+
+/* リスト */
+.problem_list {
+  list-style: disc;
+  padding-left: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+.problem_list li {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* 右画像 */
+.problem_img {
+    flex: 1;
+}
+
+.problem_img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/*Problemセクションここまで*/
+
+/*solutionセクション*/
+
+.solution {
+    padding: 100px 0 120px;
+    text-align: center;
+}
+
+/* ラベル */
+.solution_label {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+    color: #666;
+}
+
+/* タイトル */
+.solution_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #3a2f2a;
+}
+
+/* 説明文 */
+.solution_text {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 60px;
+    color: #666;
+}
+
+/* 画像 */
+.solution_img {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.solution_img img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/*solutionセクション*/
+
+/*featureセクション*/
+.feature {
+    padding: 120px 0;
+    text-align: center;
+}
+/* ラベル */
+.feature_label {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+    color: #666;
+}
+
+/* タイトル */
+.feature_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #3a2f2a;
+}
+
+/* 説明文 */
+.feature_text {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 60px;
+    color: #666;
+}
+
+/* 3カラム */
+.feature_list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* カード */
+.feature_item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    flex: 1;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+/* アイコン */
+.feature_item img {
+    height: 150px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+/* タイトル */
+.feature_item h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #3a2f2a;
+}
+
+/* テキスト */
+.feature_item p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/*featureセクションここまで*/
+
+/*CTA*/
+.cta {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #e5e2dd;
+    margin-bottom: 120px;
+}
+
+/* タイトル */
+.cta_title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #3a2f2a;
+    margin-bottom: 30px;
+}
+
+/* 強調（無料） */
+.cta_title span {
+    color: #c67c4e;
+    font-size: 55px;
+}
+
+/* サブテキスト */
+.cta_text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* ボタン */
+.cta_btn {
+    font-size: 20px;
+    padding: 16px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(198,124,78,0.3);
+    font-weight:bold;
+}
+
+/* 注意書き */
+.cta_note {
+    transform: translateY(110px);
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+}
+
+/*CTAここまで*/
+
+/*768pxレスポンシブ対応*/
+@media screen and (max-width: 768px){
+	
+	/*fv*/
+	.fv_label {
+  		font-size: 14px;
+	}
+
+	.fv_title {
+  		font-size: 28px;
+	}
+	.fv_content {
+		left: 15px;
+	}
+	/*コンセプトメッセージ*/
+  	.concept_title {
+    	font-size: 26px;
+  	}
+
+  	.concept_text p {
+    	font-size: 15px;
+   		margin-bottom: 36px;
+  	}
+
+  	.concept_lead {
+    	font-size: 18px;
+    	line-height: 2.4;
+  	}
+	
+	/*probremセクション*/
+	 .problem {
+    	padding: 80px 20px;
+  	}
+
+  	.problem_inner {
+    	flex-direction: column;
+    	gap: 40px;
+  	}
+
+  	/* 画像を上に */
+  	.problem_img {
+    	order: -1;
+    	width: 100%;
+  	}
+
+  	.problem_img img {
+    	max-width: 400px;
+		display: block;
+    	margin: 0 auto;
+  	}
+
+  	.problem_content {
+   		width: 100%;
+    	text-align: center;
+  	}
+
+  	.problem_title {
+    	font-size: 26px;
+  	}
+
+  	.problem_list li {
+    	font-size: 15px;
+  	}
+	
+	/*solutonセクション*/
+	.solution {
+    	padding: 80px 20px 100px;
+  	}
+
+  	.solution_title {
+    	font-size: 26px;
+  	}
+
+  	.solution_text {
+    	font-size: 15px;
+    	margin-bottom: 50px;
+  	}
+	
+	/*仕組みセクション*/
+    .feature {
+        padding: 80px 20px;
+    }
+
+    /* 見出し */
+    .feature_title {
+        font-size: 26px;
+    }
+
+    .feature_text {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    /* 縦並びに変更 */
+    .feature_list {
+       	flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* カード */
+    .feature_item {
+        max-width: 280px;
+        width: 100%;
+        padding: 24px 20px;
+    }
+
+    /* アイコン */
+    .feature_item img {
+        height: 100px;
+       	margin-bottom: 16px;
+    }
+
+    /* タイトル */
+    .feature_item h3 {
+        font-size: 16px;
+    }
+
+    /* テキスト */
+    .feature_item p {
+        font-size: 12px;
+    }
+	
+	/*CTAラスト*/
+    .cta_last {
+        padding: 60px 20px;
+        margin-bottom: 80px;
+    }
+
+    /* タイトル */
+    .cta_last .cta_title {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* 「無料」強調 */
+    .cta_last .cta_title span {
+        font-size: 36px;
+        display: inline-block;
+        margin: 4px 0;
+    }
+
+    /* サブテキスト */
+    .cta_last .cta_text {
+       	font-size: 13px;
+       	line-height: 1.6;
+        margin-bottom: 30px;
+   	}
+
+   	/* ボタン */
+   	.cta_last .cta_btn {
+        display: block;
+       	width: 80%;
+       	max-width: 320px;
+       	margin: 0 auto 20px;
+       	font-size: 24px;
+       	padding: 16px;
+       	border-radius: 12px;
+    }
+
+    /* 注意書き */
+    .cta_last .cta_note {
+        font-size: 11px;
+        line-height: 1.5;
+        transform: translateY(50px);
+    }
+}
+
+/*768pxここまで*/
+
+/*375pxレスポンシブ対応*/
+@media screen and (max-width: 375px){
+	
+	/*fv*/
+	.fv_label {
+  		font-size: 12px;
+	}
+
+	.fv_title {
+  		font-size: 22px;
+	}
+
+	/*コンセプトメッセージ*/
+  	.concept_title {
+    	font-size: 22px;
+  	}
+
+  	.concept_text p {
+    	font-size: 14px;
+    	line-height: 1.9;
+    	margin-bottom: 28px;
+  	}
+
+  	.concept_lead {
+    	font-size: 16px;
+    	line-height: 2.2;
+  	}
+	
+	/*probremセクション*/
+	.problem {
+    	padding: 60px 20px;
+  	}
+
+  	.problem_title {
+    	font-size: 22px;
+    	line-height: 1.5;
+  	}
+
+  	.problem_list li {
+    	font-size: 14px;
+    	margin-bottom: 12px;
+  	}
+
+  	.problem_img img {
+    	max-width: 100%;
+  	}
+
+	/*solutionセクション*/
+  	.solution {
+    	padding: 60px 20px 80px;
+  	}
+
+  	.solution_title {
+    	font-size: 22px;
+  	}
+
+  	.solution_text {
+   		font-size: 14px;
+    	line-height: 1.9;
+    	margin-bottom: 40px;
+  	}
+	
+	/*仕組みセクション*/
+    .feature {
+        padding: 60px 20px;
+    }
+
+    /* 見出し */
+    .feature_title {
+        font-size: 22px;
+    }
+
+    .feature_text {
+        font-size: 11px;
+        margin-bottom: 30px;
+    }
+
+    /* カード */
+    .feature_item {
+        max-width: 260px;
+        padding: 20px 16px;
+    }
+
+   	 /* アイコン */
+    .feature_item img {
+        height: 80px;
+        margin-bottom: 12px;
+    }
+
+   	 /* タイトル */
+    	.feature_item h3 {
+        	font-size: 14px;
+    	}
+
+    /* テキスト */
+    .feature_item p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+	
+	/*CTAラスト*/
+    .cta_last {
+        padding: 50px 16px;
+        margin-bottom: 60px;
+    }
+
+    /* タイトル */
+    .cta_last .cta_title {
+        font-size: 22px;
+    }
+
+    /* 無料 */
+    .cta_last .cta_title span {
+        font-size: 32px;
+    }
+
+    /* サブ */
+    .cta_last .cta_text {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+
+    /* ボタン（最重要） */
+    .cta_last .cta_btn {
+        width: 80%;
+       	font-size: 16px;
+        padding: 14px;
+    }
+
+    /* 注意書き */
+    .cta_last .cta_note {
+        font-size: 10px;
+        transform: Y(50px); 
+       	margin-top: 16px;
+    }
+
+}
+
+/*375pxここまで*/
+
+
+

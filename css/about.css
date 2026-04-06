@@ -1,0 +1,528 @@
+@charset "utf-8";
+
+/*fv*/
+.fv {
+    position: relative;
+    max-height: 750px;
+    overflow: hidden;
+}
+
+/* 画像 */
+
+.fv_img {
+    max-height: 100%;
+}
+
+.fv_img img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* オーバーレイ（暗くする） */
+.fv::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* テキスト */
+.fv_content {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    color: #f7f5f2;
+    z-index: 1;
+    text-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* CONCEPTラベル */
+.fv_label {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    opacity: 0.8;
+}
+
+/* タイトル */
+.fv_title {
+    font-size: 36px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/*fvここまで*/
+
+/* missionセクション */
+.mission {
+    padding: 120px 0;
+    background: linear-gradient(to bottom, #f7f5f2, #e5e2dd);
+    text-align: center;
+}
+
+/* ラベル */
+.mission_label {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* タイトル */
+.mission_title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3a2f2a;
+    margin-bottom: 60px;
+}
+
+/* 本文ラップ */
+.mission_content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* 通常テキスト */
+.mission_content p {
+    font-size: 16px;
+    line-height: 2.2;
+    color: #666;
+    margin-bottom: 45px;
+    letter-spacing: 0.05em;
+}
+
+/* リード文 */
+.mission_content .mission_lead {
+    font-size: 17px;
+    line-height: 2.3;
+    margin-bottom: 60px;
+}
+
+/* 強調 */
+.mission_content span {
+    color: #c67c4e;
+    font-weight: bold;
+}
+
+/* ブランド */
+.brand {
+    letter-spacing: 0.2em;
+}
+
+/* 最後の一文 */
+.mission_content .mission_end {
+    margin-top: 40px;
+    font-weight: bold;
+    color: #3a2f2a;
+    font-size: 20px;
+}
+
+/*missionセクションここまで*/
+
+/* about mvセクション */
+.about_mv {
+    padding: 120px 0;
+    background-color: #f7f5f2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ブロック */
+.about_block {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+
+/* 逆配置 */
+.about_block.reverse {
+    flex-direction: row-reverse;
+}
+
+/* 画像 */
+.about_img {
+    flex: 1;
+}
+
+.about_img img {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+}
+
+/* テキスト */
+.about_text {
+    flex: 1;
+}
+
+/* ラベル */
+.about_label {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* タイトル */
+.about_title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3a2f2a;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/* 説明 */
+.about_desc {
+    font-size: 14px;
+    line-height: 2;
+    color: #666;
+}
+
+/* about mvセクションここまで */
+
+/* companyセクション */
+.company {
+    padding: 0 0 120px ;
+    text-align: center;
+}
+
+/* ラベル */
+.company_label {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* タイトル */
+.company_title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3a2f2a;
+    margin-bottom: 60px;
+}
+
+/* リスト全体 */
+.company_list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 各行 */
+.company_item {
+    margin-bottom: 40px;
+}
+
+/* 項目名 */
+.company_item dt {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* 内容 */
+.company_item dd {
+    font-size: 18px;
+    color: #3a2f2a;
+    font-weight: 500;
+    margin-left: 0;
+}
+
+/* companyセクションここまで */
+
+/*CTA*/
+.cta {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #e5e2dd;
+    margin-bottom: 120px;
+}
+
+/* タイトル */
+.cta_title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #3a2f2a;
+    margin-bottom: 30px;
+}
+
+/* 強調（無料） */
+.cta_title span {
+    color: #c67c4e;
+    font-size: 55px;
+}
+
+/* サブテキスト */
+.cta_text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* ボタン */
+.cta_btn {
+    font-size: 20px;
+    padding: 16px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(198,124,78,0.3);
+    font-weight:bold;
+}
+
+/* 注意書き */
+.cta_note {
+    transform: translateY(110px);
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+}
+
+/*CTAここまで*/
+
+/*768pxレスポンシブ対応*/
+@media screen and (max-width: 768px){
+
+	/*fv*/
+	.fv_label {
+  		font-size: 14px;
+	}
+
+	.fv_title {
+  		font-size: 28px;
+	}
+
+	.fv_content {
+		left: 15px;
+	}
+
+	/*missionセクション*/
+	.mission {
+		padding: 80px 20px;
+	}
+  	.mission_title {
+    	font-size: 26px;
+  	}
+
+  	.mission_content p {
+    	font-size: 13px;
+    	line-height: 2.4;
+  	}
+	
+	.mission_content .mission_lead {
+    	font-size: 14px;
+    	margin-bottom: 40px;
+	}	
+	
+	.mission_content .mission_end {
+		font-size: 18px;
+	}
+	
+	/*about_mvセクション*/
+	.about_mv {
+        padding: 80px 20px;
+    }
+
+    /* 縦並び */
+    .about_block {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 80px;
+    }
+
+    /* reverseも無効化（重要） */
+    .about_block.reverse {
+        flex-direction: column;
+    }
+
+    .about_text {
+        text-align: center;
+    }
+
+    .about_title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .about_desc {
+        font-size: 12px;
+    }
+	
+	/*companyセクション*/
+	.company {
+        padding: 0 20px 80px;
+    }
+
+    .company_title {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .company_list {
+        max-width: 100%;
+    }
+
+    .company_item {
+        margin-bottom: 32px;
+    }
+
+    .company_item dt {
+        font-size: 11px;
+    }
+
+    .company_item dd {
+        font-size: 16px;
+    }
+	
+	/*CTAラスト*/
+    .cta_last {
+        padding: 60px 20px;
+        margin-bottom: 80px;
+    }
+
+    /* タイトル */
+    .cta_last .cta_title {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* 「無料」強調 */
+    .cta_last .cta_title span {
+        font-size: 36px;
+        display: inline-block;
+        margin: 4px 0;
+    }
+
+    /* サブテキスト */
+    .cta_last .cta_text {
+       	font-size: 13px;
+       	line-height: 1.6;
+        margin-bottom: 30px;
+   	}
+
+   	/* ボタン */
+   	.cta_last .cta_btn {
+        display: block;
+       	width: 80%;
+       	max-width: 320px;
+       	margin: 0 auto 20px;
+       	font-size: 24px;
+       	padding: 16px;
+       	border-radius: 12px;
+    }
+
+    /* 注意書き */
+    .cta_last .cta_note {
+        font-size: 11px;
+        line-height: 1.5;
+        transform: translateY(50px);
+    }
+}
+
+/*768pxここまで*/
+
+/*375pxレスポンシブ対応*/
+@media screen and (max-width: 375px){
+	.fv_label {
+  		font-size: 12px;
+	}
+
+	.fv_title {
+  		font-size: 22px;
+	}
+
+	/*missionセクション*/
+	.mission {
+		padding: 60px 20px;
+	}
+  	.mission_title {
+    	font-size: 22px;
+  	}
+
+  	.mission_content p {
+    	font-size: 11px;
+    	line-height: 2.4;
+  	}
+	
+	.mission_content .mission_lead {
+    	font-size: 12px;
+    	margin-bottom: 40px;
+	}	
+	
+	.mission_content .mission_end {
+		font-size: 16px;
+	}
+	
+	/*about_mv*/
+	.about_mv {
+		padding: 60px 20px;
+	}
+	
+	.about_title {
+        font-size: 22px;
+    }
+
+
+    .about_block {
+        margin-bottom: 60px;
+    }
+	
+	.company_title {
+        font-size: 22px;
+    }
+
+    .company_item {
+        margin-bottom: 24px;
+    }
+
+    .company_item dt {
+        font-size: 10px;
+    }
+
+    .company_item dd {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+	
+	/*CTAラスト*/
+    .cta_last {
+        padding: 50px 16px;
+        margin-bottom: 60px;
+    }
+
+    /* タイトル */
+    .cta_last .cta_title {
+        font-size: 22px;
+    }
+
+    /* 無料 */
+    .cta_last .cta_title span {
+        font-size: 32px;
+    }
+
+    /* サブ */
+    .cta_last .cta_text {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+
+    /* ボタン（最重要） */
+    .cta_last .cta_btn {
+        width: 80%;
+       	font-size: 16px;
+        padding: 14px;
+    }
+
+    /* 注意書き */
+    .cta_last .cta_note {
+        font-size: 10px;
+        transform: Y(50px); 
+       	margin-top: 16px;
+    }
+}
+
+/*375pxここまで*/

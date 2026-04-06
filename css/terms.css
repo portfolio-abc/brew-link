@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* 規約共通 */
+
+.terms {
+  padding: 120px 0;
+  background-color: #f5f3f0;
+}
+
+.terms .inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 英語タイトル */
+.terms_en {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #7a6f66;
+  margin-bottom: 10px;
+}
+
+/* メインタイトル */
+.terms_title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #3e2f2a;
+}
+
+/* リード文 */
+.terms_lead {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 60px;
+  color: #555;
+}
+
+/* 各ブロック */
+.terms_block {
+  margin-bottom: 60px;
+}
+
+.terms_block h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #3e2f2a;
+}
+
+.terms_block p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* リスト */
+.terms_block ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.terms_block li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* フッター */
+.terms_footer {
+  margin-top: 80px;
+  padding-top: 30px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.terms_footer h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #3e2f2a;
+}
+
+.terms_footer p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* 規約共通ここまで */
+
+/* 768pxレスポンシブ対応 */
+@media screen and (max-width: 768px) {
+
+  .terms {
+    padding: 80px 20px;
+  }
+
+  /* タイトル */
+  .terms_title {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  /* 英語 */
+  .terms_en {
+    font-size: 12px;
+  }
+
+  /* リード */
+  .terms_lead {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  /* ブロック */
+  .terms_block {
+    margin-bottom: 40px;
+  }
+
+  .terms_block h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .terms_block p,
+  .terms_block li {
+    font-size: 13px;
+  }
+
+  /* フッター */
+  .terms_footer {
+    margin-top: 60px;
+    padding-top: 20px;
+  }
+
+  .terms_footer h3 {
+    font-size: 16px;
+  }
+
+  .terms_footer p {
+    font-size: 13px;
+  }
+
+}
+
+/* 768pxここまで */
+
+/* 375px以下レスポンシブ対応 */
+@media screen and (max-width: 375px) {
+
+  .terms {
+    padding: 60px 16px;
+  }
+
+  /* タイトル */
+  .terms_title {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .terms_en {
+    font-size: 11px;
+  }
+
+  /* リード */
+  .terms_lead {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  /* ブロック */
+  .terms_block {
+    margin-bottom: 30px;
+  }
+
+  .terms_block h2 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .terms_block p,
+  .terms_block li {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* リスト余白 */
+  .terms_block ul {
+    padding-left: 16px;
+  }
+
+  /* フッター */
+  .terms_footer {
+    margin-top: 40px;
+  }
+
+  .terms_footer h3 {
+    font-size: 15px;
+  }
+
+  .terms_footer p {
+    font-size: 13px;
+  }
+
+}
+
+/* 375pxここまで */

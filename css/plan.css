@@ -1,0 +1,690 @@
+@charset "utf-8";
+
+/*fv*/
+.fv {
+    position: relative;
+    max-height: 750px;
+    overflow: hidden;
+}
+
+/* 画像 */
+
+.fv_img {
+    max-height: 100%;
+}
+
+.fv_img img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* オーバーレイ（暗くする） */
+.fv::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* テキスト */
+.fv_content {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-70%);
+    color: #f7f5f2;
+    z-index: 2;
+    text-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* タイトル */
+.fv_title {
+    font-size: 36px;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+/*ボタン*/
+.fv_btn {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 14px 40px;
+    box-shadow: 0 8px 20px rgba(198,124,78,0.3);
+    transition: 0.3s;
+    border: 2px solid #f7f5f2;
+    border-radius: 20px;
+}
+
+/*fvここまで*/
+
+/*プラン*/
+.plan {
+    padding: 120px 0;
+    text-align: center;
+}
+
+/*ラベル*/
+.plan_label {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    color: #666;    
+}
+
+/* タイトル */
+.plan_title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3a2f2a;
+    margin-bottom: 24px;
+}
+
+/* サブ */
+.plan_text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+/* 横並び */
+.plan_list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* カード */
+.plan_item {
+    flex: 1;
+    max-width: 320px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+    border: 1px solid #aaa; 
+}
+
+/* おすすめ */
+.plan_item.is_popular {
+    border: 2px solid #c67c4e;
+    transform: scale(1.05);
+
+}
+
+/* バッジ */
+.plan_badge {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.plan_badge img {
+    width: 70px;
+}
+
+/* プラン名 */
+.plan_name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3a2f2a;
+    font-size: 26px;
+}
+
+/* 価格 */
+.plan_price {
+    font-size: 45px;
+    font-weight: bold;
+    color: #c67c4e;
+    margin-bottom: 40px;
+}
+
+.plan_price span {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 特徴 */
+.plan_features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    min-height: 110px;
+}
+
+.plan_features li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+/* デフォルト（枠ボタン） */
+.plan_btn {
+    background-color: transparent;
+    color: #c67c4e;
+    border: 2px solid #c67c4e;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(198,124,78,0.1);
+}
+
+/* ホバー */
+.plan_btn:hover {
+    background-color: #c67c4e;
+    color: #fff;
+}
+
+/* 比較セクション */
+.plan_compare {
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* ラベル */
+.compare_label {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    color: #666;
+}
+
+/* タイトル */
+.compare_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #3a2f2a;
+}
+
+/* 説明 */
+.compare_text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+/* テーブル */
+.compare_table_wrap {
+    overflow-x: auto;
+    padding-top: 40px;
+}
+
+.compare_table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+/* セル共通 */
+.compare_table th,
+.compare_table td {
+    border: 1px solid #aaa;
+    padding: 16px;
+    font-size: 18px;
+}
+
+/* 見出し列 */
+.compare_table th {
+    background: #f0ede9;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* 内容列 */
+.compare_table td {
+    font-weight: 400;
+}
+/* 左列 */
+.compare_table th:first-child {
+    background: #e5e2dd;
+    width: 150px;
+}
+
+/* おすすめ列 */
+.compare_table .is_popular {
+    background: #f9f3ee;
+    color: #c67c4e;
+    font-weight: bold;
+}
+
+/*プラン名*/
+.plan_name  th {
+    font-size: 24px;
+}
+
+/* プラン補足 */
+.plan_sub {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    margin-top: 6px;
+}
+
+/*値段列*/
+.price_row td {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 32px 16px;
+}
+
+.price_row th {
+    font-size: 16px;
+}
+
+/*オレンジ枠線*/
+.compare_table tr:first-child th.is_popular {
+    border-top: 3px solid #c67c4e;
+}
+
+.compare_table tr:last-child td.is_popular {
+    border-bottom: 3px solid #c67c4e;
+}
+
+.compare_table td.is_popular,
+.compare_table th.is_popular {
+    border-left: 3px solid #c67c4e;
+    border-right: 3px solid #c67c4e;
+}
+
+/* バッジ */
+.compare_table th {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+}
+
+/* 画像サイズ */
+.badge img {
+    width: 60px;
+}
+
+/* おすすめだけ塗り */
+.is_popular .plan_btn {
+    background-color: #c67c4e;
+    color: #fff;
+    border: none; 
+    box-shadow: 0 8px 20px rgba(198,124,78,0.4);
+}
+
+/*比較セクションここまで*/
+
+/*CTA*/
+.cta {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #e5e2dd;
+    margin-bottom: 120px;
+}
+
+/* タイトル */
+.cta_title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #3a2f2a;
+    margin-bottom: 30px;
+}
+
+/* 強調（無料） */
+.cta_title span {
+    color: #c67c4e;
+    font-size: 55px;
+}
+
+/* サブテキスト */
+.cta_text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* ボタン */
+.cta_btn {
+    font-size: 20px;
+    padding: 16px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(198,124,78,0.3);
+    font-weight:bold;
+}
+
+/*CTAここまで*/
+
+/*768pxレスポンシブ対応*/
+@media screen and (max-width: 768px){
+
+	/*fv*/
+	.fv_title {
+  		font-size: 28px;
+		margin-bottom: 30px;
+	}
+
+	.fv_btn {
+    	font-size: 22px;
+    	padding: 12px 32px;
+    	border-radius: 16px;
+  	}
+
+	.fv_content {
+		left: 15px;
+	}
+
+	/*プランセクション*/
+    .plan {
+        padding: 80px 20px;
+    }
+
+    /* 縦並び */
+    .plan_list {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* カード */
+    .plan_item {
+        width: 100%;
+        max-width: 280px;
+        padding: 24px 20px;
+    }
+
+    /* タイトル */
+    .plan_title {
+        font-size: 24px;
+        line-height: 1.6;
+    }
+
+    .plan_text {
+        font-size: 13px;
+        margin-bottom: 40px;
+    }
+
+    /* プラン名 */
+    .plan_name {
+        font-size: 20px;
+    }
+
+    /* 価格 */
+    .plan_price {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .plan_price span {
+        font-size: 12px;
+    }
+
+    /* リスト */
+    .plan_features {
+        min-height: auto;
+        margin-bottom: 40px;
+    }
+
+    .plan_features li {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    /* ボタン */
+    .plan_btn {
+        width: 80%;
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    /* おすすめ（少し強調） */
+    .plan_item.is_popular {
+        transform: scale(1.03);
+    }
+
+    /* バッジ位置調整 */
+    .plan_badge {
+        top: -20px;
+        left: -10px;
+    }
+
+    .plan_badge img {
+        width: 60px;
+    }
+
+	/*比較セクション*/
+	.plan_compare {
+        padding: 80px 20px;
+    }
+
+    /* テーブルスクロール強化 */
+    .compare_table_wrap {
+        overflow-x: auto;
+		padding-bottom: 16px;
+    }
+
+    /* テーブル横幅を確保（重要） */
+    .compare_table {
+        min-width: 700px;
+    }
+
+    .compare_table th,
+    .compare_table td {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .plan_name th {
+        font-size: 18px;
+    }
+
+    .price_row td {
+        font-size: 18px;
+        padding: 20px 12px;
+    }
+
+    /* バッジ位置微調整 */
+    .badge {
+        top: -30px;
+        left: 5px;
+    }
+
+    .badge img {
+        width: 50px;
+    }
+	
+	/*CTAラスト*/
+    .cta_last {
+        padding: 60px 20px;
+        margin-bottom: 80px;
+    }
+
+    /* タイトル */
+    .cta_last .cta_title {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    /* 「無料」強調 */
+    .cta_last .cta_title span {
+        font-size: 36px;
+        display: inline-block;
+        margin: 4px 0;
+    }
+
+    /* サブテキスト */
+    .cta_last .cta_text {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    /* ボタン */
+    .cta_last .cta_btn {
+        display: block;
+        width: 80%;
+        max-width: 320px;
+        margin: 0 auto 20px;
+        font-size: 24px;
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    /* 注意書き */
+    .cta_last .cta_note {
+        font-size: 11px;
+        line-height: 1.5;
+        transform: translateY(50px);
+    }
+}
+
+/*768pxここまで*/
+
+/*375pxレスポンシブ対応*/
+@media screen and (max-width: 375px){
+
+	.fv_title {
+  		font-size: 22px;
+		margin-bottom: 22px;
+	}
+	.fv_btn {
+    	font-size: 18px;
+    	padding: 10px 24px;
+    	border-radius: 14px;
+  	}
+
+	/*プランセクション*/
+    .plan {
+        padding: 60px 16px;
+    }
+
+    /* タイトル */
+    .plan_title {
+        font-size: 22px;
+    }
+
+    .plan_text {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    /* カード */
+    .plan_item {
+        max-width: 260px;
+        padding: 20px 16px;
+    }
+
+    /* プラン名 */
+    .plan_name {
+        font-size: 18px;
+    }
+
+    /* 価格 */
+    .plan_price {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .plan_price span {
+        font-size: 11px;
+    }
+
+    /* リスト */
+    .plan_features {
+        margin-bottom: 20px;
+    }
+
+    .plan_features li {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    /* ボタン（重要） */
+    .plan_btn {
+        width: 80%;
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    /* おすすめ（控えめに） */
+    .plan_item.is_popular {
+        transform: scale(1.02);
+    }
+
+    /* バッジ */
+    .plan_badge {
+        top: -16px;
+        left: -8px;
+    }
+
+    .plan_badge img {
+        width: 50px;
+    }
+
+	/*比較セクション*/
+	.compare_table {
+        min-width: 600px;
+    }
+
+    .compare_table th,
+    .compare_table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .plan_name th {
+        font-size: 16px;
+    }
+
+    .price_row td {
+        font-size: 16px;
+    }
+
+    /* 左列少し縮める */
+    .compare_table th:first-child {
+        width: 110px;
+    }
+
+    /* バッジ小さく */
+    .badge img {
+        width: 45px;
+    }
+	
+	/*CTAラスト*/
+    .cta_last {
+        padding: 50px 16px;
+        margin-bottom: 60px;
+    }
+
+    /* タイトル */
+    .cta_last .cta_title {
+        font-size: 22px;
+    }
+
+    /* 無料 */
+    .cta_last .cta_title span {
+        font-size: 32px;
+    }
+
+    /* サブ */
+    .cta_last .cta_text {
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+
+    /* ボタン（最重要） */
+    .cta_last .cta_btn {
+        width: 80%;
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    /* 注意書き */
+    .cta_last .cta_note {
+        font-size: 10px;
+        transform: Y(50px); 
+        margin-top: 16px;
+    }
+}
+
+/*375pxここまで*/

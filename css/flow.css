@@ -1,0 +1,964 @@
+@charset "utf-8";
+
+/*fv*/
+.fv {
+    position: relative;
+    max-height: 750px;
+    overflow: hidden;
+}
+
+/* 画像 */
+
+.fv_img {
+    max-height: 100%;
+}
+
+.fv_img img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* オーバーレイ（暗くする） */
+.fv::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* テキスト */
+.fv_content {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-60%);
+    color: #f7f5f2;
+    z-index: 1;
+    text-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* タイトル */
+.fv_title {
+    font-size: 36px;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+/*ボタン*/
+.fv_btn {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 14px 40px;
+    box-shadow: 0 8px 20px rgba(198,124,78,0.3);
+    transition: 0.3s;
+    border: 2px solid #f7f5f2;
+    border-radius: 20px;
+}
+/*fvここまで*/
+
+/* flowセクション */
+.flow {
+    padding: 120px 0 80px;
+    text-align: center;
+    background: linear-gradient(to bottom, #f7f5f2, #e5e2dd);
+}
+
+/* タイトル */
+.flow_sub {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.flow_title {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: #3a2f2a;
+}
+
+.flow_text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 80px;
+}
+
+/* 横並び */
+.flow_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* カード */
+.flow_item {
+    position: relative;
+    width: 220px;
+	max-height: 300px;
+    padding: 40px 20px 30px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* 番号 */
+.flow_number {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c47a4a;
+    color: #fff;
+    font-size: 24px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+/* 見出し */
+.flow_item h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #3a2f2a;
+}
+
+/* アイコン */
+.flow_item img {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/* テキスト */
+.flow_item p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* 矢印 */
+.flow_arrow {
+    font-size: 30px;
+    color: #999;
+}
+
+.flow .btn {
+    max-width: 300px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 40px;
+    box-shadow: 0 8px 20px rgba(198,124,78,0.3);
+    transition: 0.3s;
+    border: 2px solid #f7f5f2;
+    border-radius: 20px;
+    margin: 80px 0 80px;
+}
+/* flowセクションここまで */
+
+/*featureセクション*/
+.feature {
+    padding: 120px 0;
+    text-align: center;
+}
+/* ラベル */
+.feature_label {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+    color: #666;
+}
+
+/* タイトル */
+.feature_title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #3a2f2a;
+}
+
+/* 説明文 */
+.feature_text {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 60px;
+    color: #666;
+}
+
+/* 3カラム */
+.feature_list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* カード */
+.feature_item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    flex: 1;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+/* アイコン */
+.feature_item img {
+    height: 150px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+/* タイトル */
+.feature_item h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #3a2f2a;
+}
+
+/* テキスト */
+.feature_item p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/*featureセクションここまで*/
+
+/* diagnosisセクション */
+.diagnosis {
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* タイトル */
+.diagnosis_label {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.diagnosis_title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3a2f2a;
+    margin-bottom: 10px;
+}
+
+.diagnosis_text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+/* ボックス */
+.diagnosis_box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* 見出し */
+.diagnosis_heading {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #3a2f2a;
+}
+
+.diagnosis_heading span {
+    color: #c67c4e;
+}
+
+/* 説明 */
+.diagnosis_desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.diagnosis_desc span {
+    font-size: 12px;
+    color: #999;
+}
+
+/* 線 */
+.diagnosis_box hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+/* 質問 */
+.question {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.question_title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 選択肢 */
+.options {
+    display: flex;
+    gap: 10px;
+}
+
+/* ボタン風ラジオ */
+.options label {
+    flex: 1;
+    padding: 10px;
+    background: #f3f1ee;
+    border-radius: 999px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+/* ラジオ非表示 */
+.options input {
+    display: none;
+}
+
+/* 選択時 */
+.options input:checked + label {
+    background: #c67c4e;
+    color: #fff;
+}
+
+/* ボタン */
+.diagnosis_btn {
+    margin-top: 30px;
+    padding: 16px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+}
+
+/* 注意 */
+.diagnosis_note {
+    font-size: 12px;
+    color: #999;
+    margin: 30px auto 0;
+}
+
+/* diagnosisセクションここまで */
+
+/* registerセクション */
+.register {
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* タイトル */
+.register_label {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.register_title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3a2f2a;
+    margin-bottom: 10px;
+}
+
+.register_text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+.register_box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+/* タイトル */
+.register_formtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #3a2f2a;
+}
+
+/* プラン */
+.register_plans {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* カード */
+.plan_card {
+    flex: 1;
+    cursor: pointer;
+}
+
+.plan_card input {
+    display: none;
+}
+
+.plan_inner {
+    padding: 20px;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+/* 選択状態 */
+.plan_card input:checked + .plan_inner {
+    border: 2px solid #c67c4e;
+    transform: scale(1.05);
+}
+
+/* 名前 */
+.plan_name {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* 価格 */
+.plan_price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #c67c4e;
+}
+
+.plan_price span {
+    font-size: 12px;
+    color: #666;
+}
+
+/* 説明 */
+.plan_text {
+    font-size: 12px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* ボタン風 */
+.plan_btn {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #c67c4e;
+    color: #c67c4e;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.plan_card input:checked + .plan_inner .plan_btn {
+    background: #c67c4e;
+    color: #ddd;
+    border: none;
+}
+
+/* 区切り */
+.register_box hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* フォーム */
+.register_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 入力 */
+.form_item {
+    text-align: left;
+}
+
+.form_item label {
+    font-size: 13px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form_item input {
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fdfaf7;
+}
+
+/* ボタン */
+.register_btn {
+    margin: 30px auto 0;
+    max-width: 300px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: none;
+}
+
+/* 注意 */
+.register_note {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #3a2f2a;
+    background-color: #e5e2dd;
+    text-align: center;
+    margin-left: -40px;
+    margin-right:-40px;
+    padding: 24px 0;
+}
+
+/* registerセクションここまで */
+
+/*768pxレスポンシブ対応*/
+@media screen and (max-width: 768px){
+
+	/*fv*/
+	.fv_title {
+  		font-size: 28px;
+		margin-bottom: 30px;
+	}
+
+	.fv_btn {
+    	font-size: 22px;
+    	padding: 12px 32px;
+    	border-radius: 16px;
+  	}
+
+	.fv_content {
+		left: 15px;
+	}
+
+	/* flowセクション */
+    .flow {
+        padding: 80px 20px;
+    }
+
+	.flow_title {
+        font-size: 26px;
+    }
+
+    .flow_text {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    /* 縦並び */
+    .flow_list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flow_item {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* 矢印を下向きに */
+    .flow_arrow {
+        transform: rotate(90deg);
+        font-size: 24px;
+		margin: 0 auto 15px;
+    }
+	/* ボタン */
+    .flow .btn {
+        width: 80%;
+       	font-size: 16px;
+        padding: 14px;
+    }
+
+	/*featureセクション*/
+    .feature {
+        padding: 80px 20px;
+    }
+
+    /* 見出し */
+    .feature_title {
+        font-size: 26px;
+    }
+
+    .feature_text {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    /* 縦並びに変更 */
+    .feature_list {
+       	flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* カード */
+    .feature_item {
+        max-width: 280px;
+        width: 100%;
+        padding: 24px 20px;
+    }
+
+    /* アイコン */
+    .feature_item img {
+        height: 100px;
+       	margin-bottom: 16px;
+    }
+
+    /* タイトル */
+    .feature_item h3 {
+        font-size: 16px;
+    }
+
+    /* テキスト */
+    .feature_item p {
+        font-size: 12px;
+    }
+
+	/*diagnosisセクション*/
+    .diagnosis {
+        padding: 80px 20px;
+    }
+
+    /* 見出し */
+    .diagnosis_title {
+        font-size: 26px;
+    }
+
+    .diagnosis_text {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+	/* ボックス余白調整 */
+    .diagnosis_box {
+        padding: 40px 24px;
+    }
+
+    /* 見出し */
+    .diagnosis_heading {
+        font-size: 20px;
+    }
+
+    /* 説明 */
+    .diagnosis_desc {
+        font-size: 14px;
+    }
+
+    /* 選択肢間隔 */
+    .options {
+        gap: 8px;
+    }
+
+    /* ボタン風 */
+    .options label {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+
+    /* 質問間隔 */
+    .question {
+        margin-bottom: 24px;
+    }
+
+    /* ボタン */
+    .diagnosis_btn {
+        width: 90%;
+        font-size: 16px;
+        padding: 14px;
+    }
+
+	/* registerセクション */
+    .register {
+        padding: 80px 20px;
+    }
+
+	.register_title {
+        font-size: 26px;
+    }
+
+    .register_text {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+	
+	/* ボックス余白 */
+    .register_box {
+        padding: 40px 24px;
+    }
+
+    /* プラン縦並び */
+    .register_plans {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* カード */
+    .plan_inner {
+        padding: 18px;
+    }
+
+    /* 選択時の拡大を少し弱める */
+    .plan_card input:checked + .plan_inner {
+        transform: scale(1.02);
+    }
+
+    /* フォーム */
+    .register_form {
+        gap: 16px;
+    }
+
+    .form_item input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* ボタン */
+    .register_btn {
+        max-width: 90%;
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    /* 注意文 */
+    .register_note {
+        margin-left: -24px;
+        margin-right: -24px;
+        padding: 20px 0;
+        font-size: 14px;
+    }
+}
+
+/*768pxここまで*/
+
+/*375pxレスポンシブ対応*/
+@media screen and (max-width: 375px){
+
+	.fv_title {
+  		font-size: 22px;
+		margin-bottom: 22px;
+	}
+	.fv_btn {
+    	font-size: 18px;
+    	padding: 10px 24px;
+    	border-radius: 14px;
+  	}
+
+	/* flowセクション */
+    .flow {
+        padding: 60px 20px;
+    }
+
+	.flow_title {
+        font-size: 24px;
+    }
+	
+	.flow_text {
+       	font-size: 12px;
+   	}
+	
+	/* ボタン */
+    .flow .btn {
+        width: 80%;
+       	font-size: 14px;
+        padding: 14px;
+    }
+	
+	/*featureセクション*/
+    .feature {
+        padding: 60px 20px;
+    }
+
+    /* 見出し */
+    .feature_title {
+        font-size: 22px;
+    }
+
+    .feature_text {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    /* カード */
+    .feature_item {
+        max-width: 260px;
+        padding: 20px 16px;
+    }
+
+   	 /* アイコン */
+    .feature_item img {
+        height: 80px;
+        margin-bottom: 12px;
+    }
+
+   	 /* タイトル */
+    	.feature_item h3 {
+        	font-size: 14px;
+    	}
+
+    /* テキスト */
+    .feature_item p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+	
+	/*diagnosisセクション*/
+    .diagnosis {
+        padding: 60px 20px;
+    }
+
+    /* 見出し */
+    .diagnosis_title {
+        font-size: 22px;
+    }
+
+    .diagnosis_text {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+	/* ボックス */
+    .diagnosis_box {
+        padding: 30px 16px;
+    }
+
+    /* 見出し */
+    .diagnosis_heading {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    /* 説明 */
+    .diagnosis_desc {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* ▼ここが重要 */
+    .options {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* ボタン風ラジオ */
+    .options label {
+        width: 90%;
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    /* 質問タイトル */
+    .question_title {
+        font-size: 13px;
+    }
+
+    /* ボタン */
+    .diagnosis_btn {
+        width: 90%;
+        font-size: 15px;
+        padding: 14px;
+        margin-top: 20px;
+    }
+
+    /* 注意文 */
+    .diagnosis_note {
+        font-size: 11px;
+        margin-top: 20px;
+    }
+
+	/* registerセクション */
+    .register {
+        padding: 60px 20px;
+    }
+
+	.register_title {
+        font-size: 24px;
+    }
+	
+	.register_text {
+       	font-size: 12px;
+   	}
+	
+	/* ボックス */
+    .register_box {
+        padding: 30px 16px;
+    }
+
+    /* タイトル */
+    .register_formtitle {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* プラン */
+    .register_plans {
+        gap: 12px;
+    }
+
+    .plan_inner {
+        padding: 16px;
+    }
+
+    .plan_name {
+        font-size: 13px;
+    }
+
+    .plan_price {
+        font-size: 20px;
+    }
+
+    .plan_text {
+        font-size: 11px;
+    }
+
+    .plan_btn {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    /* フォーム */
+    .register_form {
+        gap: 14px;
+    }
+
+    .form_item label {
+        font-size: 12px;
+    }
+
+    .form_item input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    /* ボタン */
+    .register_btn {
+        font-size: 15px;
+        padding: 14px;
+    }
+
+    /* 注意文 */
+    .register_note {
+        margin-left: -16px;
+        margin-right: -16px;
+        font-size: 13px;
+        padding: 18px 0;
+    }
+}
+
+/*375pxここまで*/

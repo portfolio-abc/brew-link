@@ -1,0 +1,368 @@
+@charset "utf-8";
+
+/*fv*/
+.fv {
+    position: relative;
+    max-height: 750px;
+    overflow: hidden;
+}
+
+/* 画像 */
+
+.fv_img {
+    max-height: 100%;
+}
+
+.fv_img img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* オーバーレイ（暗くする） */
+.fv::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* テキスト */
+.fv_content {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    color: #f7f5f2;
+    z-index: 1;
+    text-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* CONCEPTラベル */
+.fv_label {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    opacity: 0.8;
+}
+
+/* タイトル */
+.fv_title {
+    font-size: 36px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/*fvここまで*/
+
+/*faqセクション*/
+.faq {
+    padding: 0 0 120px;
+    text-align: left;
+}
+
+.faq_first {
+    padding-top: 120px;
+}
+
+/*ラベル*/
+.faq_label {
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    color: #666;
+    text-align: center;
+}
+
+/* タイトル */
+.faq_title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3a2f2a;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* リスト */
+.faq_list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 各アイテム */
+.faq_item {
+    background-color: #ebe7e3;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/* Q */
+.faq_q {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #3a2f2a;
+}
+
+/* A */
+.faq_a {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    gap: 16px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3a2f2a;
+}
+
+/* アイコン */
+.faq_iconQ {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+	flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.faq_iconA {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ebe7e3;
+    display: flex;
+	flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/*FAQセクションここまで*/
+
+/*問い合わせ*/
+.contact {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #e5e2dd;
+    max-width: 1080px;
+    border-radius: 30px;
+    margin: 0 auto 120px;
+}
+
+/* タイトル */
+.contact_title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #3a2f2a;
+    margin-bottom: 30px;
+}
+
+/* サブテキスト */
+.contact_text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* ボタン */
+.contact_btn {
+    font-size: 20px;
+    padding: 16px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(198,124,78,0.3);
+    font-weight:bold;
+}
+
+/*問い合わせここまで*/
+
+/*768pxレスポンシブ対応*/
+@media screen and (max-width: 768px){
+
+	/*fv*/
+	.fv_label {
+  		font-size: 14px;
+	}
+
+	.fv_title {
+  		font-size: 28px;
+	}
+
+	.fv_content {
+		left: 15px;
+	}
+
+	/*FAQセクション*/
+    .faq {
+        padding: 80px 20px;
+    }
+
+    /* タイトル */
+    .faq_title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .faq_text {
+        font-size: 13px;
+        margin-bottom: 40px;
+    }
+
+    /* リスト間 */
+    .faq_list {
+        gap: 16px;
+    }
+
+    /* 各アイテム */
+    .faq_item {
+        margin-bottom: 0;
+        border-radius: 16px;
+    }
+
+    /* Q */
+    .faq_q {
+        padding: 12px 16px;
+        font-size: 15px;
+        gap: 12px;
+        text-align: left;
+    }
+
+    /* A */
+    .faq_a {
+        padding: 12px 16px;
+        font-size: 14px;
+        line-height: 1.6;
+        gap: 12px;
+        text-align: left;
+    }
+
+    /* アイコン */
+    .faq_iconQ,
+    .faq_iconA {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+	/*問い合わせ*/
+	.contact {
+    	padding: 80px 0;
+	}
+
+	/* タイトル */
+	.contact_title {
+    	font-size: 28px;
+	}
+
+	/* サブテキスト */
+	.contact_text {
+    	font-size: 12px;
+	}
+
+	/* ボタン */
+	.contact_btn {
+	    font-size: 16px;
+	    display: block;
+       	width: 60%;
+       	max-width: 320px;
+       	margin: 0 auto;
+       	border-radius: 12px;
+	}
+
+}
+
+/*768pxここまで*/
+
+/*375pxレスポンシブ対応*/
+@media screen and (max-width: 375px){
+	.fv_label {
+  		font-size: 12px;
+	}
+
+	.fv_title {
+  		font-size: 22px;
+	}
+
+	/*FAQ*/
+    .faq {
+        padding: 60px 16px;
+    }
+
+    /* タイトル */
+    .faq_title {
+        font-size: 22px;
+    }
+
+    .faq_text {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    /* リスト */
+    .faq_list {
+        gap: 12px;
+    }
+
+    /* アイテム */
+    .faq_item {
+        border-radius: 14px;
+    }
+
+    /* Q */
+    .faq_q {
+        padding: 10px 12px;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    /* A */
+    .faq_a {
+        padding: 10px 12px;
+        font-size: 13px;
+        line-height: 1.5;
+        gap: 10px;
+    }
+
+    /* アイコン */
+    .faq_iconQ,
+    .faq_iconA {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+	
+	/*問い合わせ*/
+	.contact {
+    	padding: 60px 0;
+	}
+
+	/* タイトル */
+	.contact_title {
+    	font-size: 22px;
+	}
+
+	/* サブテキスト */
+	.contact_text {
+    	font-size: 12px;
+	}
+
+	/* ボタン */
+	.contact_btn {
+	    font-size: 14px;
+	    display: block;
+       	border-radius: 12px;
+	}
+
+}
+
+/*375pxここまで*/

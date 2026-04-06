@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/*fv*/
+.fv {
+    position: relative;
+    max-height: 750px;
+    overflow: hidden;
+}
+
+/* 画像 */
+
+.fv_img {
+    max-height: 100%;
+}
+
+.fv_img img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* オーバーレイ（暗くする） */
+.fv::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* テキスト */
+.fv_content {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    color: #f7f5f2;
+    z-index: 1;
+    text-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* CONCEPTラベル */
+.fv_label {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    opacity: 0.8;
+}
+
+/* タイトル */
+.fv_title {
+    font-size: 36px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/*fvここまで*/
+
+/* contactセクション */
+.contact {
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* ラベル */
+.contact_label {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* タイトル */
+.contact_title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3a2f2a;
+    margin-bottom: 20px;
+}
+
+/* 説明 */
+.contact_text {
+    font-size: 14px;
+    color: #666;
+    line-height: 2;
+    margin-bottom: 60px;
+}
+
+/* フォーム外枠 */
+.contact_form_wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* フォームタイトル */
+.contact_form_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #3a2f2a;
+}
+
+/* フォーム */
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* 各項目 */
+.form_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ラベル */
+.form_item label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #3a2f2a;
+    font-weight: bold;
+}
+
+.form_item input,
+.form_item textarea {
+    width: 90%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fdfaf7; 
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* フォーカス */
+.form_item input:focus,
+.form_item textarea:focus {
+    outline: none;
+    border: 1px solid #c67c4e;
+    background-color: #fff;
+}
+
+/* ボタン */
+.contact_btn {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 16px 100px;
+    border-radius: 30px;
+    max-width: 300px;
+    margin: 20px auto 0;
+    border: none;
+}
+
+/* 注意書き */
+.contact_note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+/* contactセクションここまで*/
+
+/*768pxレスポンシブ対応*/
+@media screen and (max-width: 768px){
+
+	/*fv*/
+	.fv_label {
+  		font-size: 14px;
+	}
+
+	.fv_title {
+  		font-size: 28px;
+	}
+
+	.fv_content {
+		left: 15px;
+	}
+
+	/*contactyフォーム*/
+    .contact {
+        padding: 80px 20px;
+    }
+
+    .contact_title {
+        font-size: 26px;
+    }
+
+    .contact_text {
+		font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    /* フォーム外枠 */
+    .contact_form_wrap {
+        padding: 40px 24px;
+        border-radius: 16px;
+    }
+
+    /* フォームタイトル */
+    .contact_form_title {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    /* 入力欄 */
+    .form_item input,
+    .form_item textarea {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    /* ボタン */
+    .contact_btn {
+        font-size: 16px;
+        padding: 14px 40px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact_note {
+        font-size: 11px;
+    }
+	
+}
+
+/*768pxここまで*/
+
+/*375pxレスポンシブ対応*/
+@media screen and (max-width: 375px){
+	.fv_label {
+  		font-size: 12px;
+	}
+
+	.fv_title {
+  		font-size: 22px;
+	}
+
+	/*contactフォーム*/
+	.contact {
+		padding: 60px 20px;
+	}
+	.contact_title {
+        font-size: 22px;
+    }
+
+	.contact_text {
+		font-size: 12px;
+		margin-bottom: 30px;
+	}
+    .contact_form_wrap {
+        padding: 32px 16px;
+    }
+
+    .contact_form {
+        gap: 20px;
+    }
+
+    /* ラベル */
+    .form_item label {
+        font-size: 13px;
+    }
+
+    /* 入力欄 */
+    .form_item input,
+    .form_item textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* ボタン */
+    .contact_btn {
+        font-size: 15px;
+        padding: 16px;
+        border-radius: 999px;
+    }
+
+    .contact_note {
+        font-size: 10px;
+    }
+}
+
+/*375pxここまで*/
