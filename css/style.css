@@ -306,7 +306,11 @@ body {
 	.nav_list a {
         border-bottom: none;
     }
-
+	
+	.nav_list a:hover {
+    	border-bottom: none;
+	}
+	
     .nav_list a.active {
         border-bottom: none;
     }

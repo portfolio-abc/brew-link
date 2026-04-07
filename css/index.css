@@ -636,12 +636,13 @@
     /* 画像を上に */
     .fv_img {
         order: -1;
+        max-height: 100%;
     }
 
     /* 画像調整 */
     .fv_img img {
         width: 100%;
-        margin: 0 auto;
+        max-height: 100%;
         object-fit: cover;
         content: url("../images/fv_top_375px.jpg");
     }
