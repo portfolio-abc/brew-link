@@ -631,6 +631,7 @@
 
     .fv {
         padding: 80px 0 70px;
+        overflow: hidden;
     }
     .fv_inner {
         flex-direction: column;
