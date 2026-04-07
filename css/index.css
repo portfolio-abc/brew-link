@@ -642,8 +642,7 @@
     /* 画像調整 */
     .fv_img img {
         width: 100%;
-        max-width: 100%;
-        height: auto;
+        max-height: 380px;
         content: url("../images/fv_top_375px.jpg");
     }
 
