@@ -765,27 +765,22 @@
 
     /* カード（2列にする） */
     .card {
+        width: 100%;
+        max-width: 280px;
         display: block;
-        width: 40%;
+        margin: 0 auto;
     }
     
     .about_list {
         display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
     }
 
-     /* 1・2枚目 */
     .about_item {
-        width: 100%;
         padding: 20px 12px;
-    }
-
-    /* 3枚目だけ中央 */
-    .about_item:nth-child(3) {
-        width: 100%;
-        margin: 0 auto;
+        box-sizing: border-box;
     }
 
     /* 数字 */
@@ -1173,25 +1168,12 @@
         margin-bottom: 24px;
     }
 
-    /* 1列に変更 */
     .about_list {
-        display: flex;
-        flex-direction: column;
         gap: 16px;
-        align-items: stretch;
-    }
-
-    /* カード */
-    .card {
-        display: block;
-        width: 100%;
-        max-width: 260px;
-        margin: 0 auto;
     }
 
     .about_item {
         padding: 20px 16px;
-        box-sizing: border-box;
     }
 
     /* 数字 */
