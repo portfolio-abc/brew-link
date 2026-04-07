@@ -638,10 +638,10 @@
         order: -1;
     }
 
+    /* 画像調整 */
     .fv_img img {
-        width: 100vw;
-        height: 100%;
-        display: block;
+        width: 100%;
+        margin: 0 auto;
         object-fit: cover;
         content: url("../images/fv_top_375px.jpg");
     }

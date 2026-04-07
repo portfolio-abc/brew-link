@@ -47,7 +47,7 @@
 }
 
 .fv_btn {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: bold;
     padding: 14px 40px;
     box-shadow: 0 8px 20px rgba(198,124,78,0.3);
@@ -325,18 +325,19 @@
 
 	/*fv*/
 	.fv_title {
-  		font-size: 28px;
-		margin-bottom: 30px;
+  		font-size: 26px;
+		margin-bottom: 10px;
 	}
 
 	.fv_btn {
-    	font-size: 22px;
+    	font-size: 18px;
     	padding: 12px 32px;
     	border-radius: 16px;
   	}
 
 	.fv_content {
 		left: 15px;
+	    transform: translateY(-55%);
 	}
 
 	/*serviceセクション*/
@@ -500,11 +501,10 @@
 @media screen and (max-width: 375px){
 
 	.fv_title {
-  		font-size: 22px;
-		margin-bottom: 22px;
+  		font-size: 20px;
 	}
 	.fv_btn {
-    	font-size: 18px;
+    	font-size: 14px;
     	padding: 10px 24px;
     	border-radius: 14px;
   	}
