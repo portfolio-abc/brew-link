@@ -628,6 +628,10 @@
 }
 /*768pxレスポンシブ対応*/
 @media screen and (max-width: 768px) {
+
+    .fv {
+        padding: 80px 0 70px;
+    }
     .fv_inner {
         flex-direction: column;
         gap: 0;

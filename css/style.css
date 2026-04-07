@@ -327,11 +327,6 @@ body {
         transition: 0.3s;
     }
 
-    /* hover時 */
-    .nav_list a:hover::before {
-        height: 70%;
-    }
-
     /* active時 */
     .nav_list a.active::before {
         height: 70%;

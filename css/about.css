@@ -2,9 +2,9 @@
 
 /*fv*/
 .fv {
-    position: relative;
     max-height: 750px;
     overflow: hidden;
+	position: relative;
 }
 
 /* 画像 */
@@ -17,6 +17,7 @@
     width: 100%;
     max-height: 100%;
     object-fit: cover;
+	display: block;
 }
 
 /* オーバーレイ（暗くする） */
