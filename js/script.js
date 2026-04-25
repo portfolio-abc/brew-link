@@ -20,9 +20,10 @@ pageTopBtn.addEventListener('click', () => {
 
 //ハンバーガーリスト
 const hamburger = document.getElementById('hamburger');
-const nav = document.getElementById('nav');
+const nav = document.querySelector('.nav');
 
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    nav.classList.toggle('active');
+  hamburger.classList.toggle('active');
+  nav.classList.toggle('active');
 });
+
